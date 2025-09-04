@@ -1,0 +1,63 @@
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a37e2c, #006039);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  max-width: 520px;
+  text-align: center;
+  animation: fadeScale 1s ease;
+}
+
+.card h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #006039;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #a37e2c;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(163,126,44,0.4);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  background: #006039;
+  box-shadow: 0 6px 14px rgba(0,96,57,0.5);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

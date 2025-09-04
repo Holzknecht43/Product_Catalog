@@ -1,0 +1,27 @@
+<div class="background">
+  <div class="card">
+    <h1>Product List</h1>
+    <table class="products">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Sneaker</th>
+          <th>Price</th>
+          <th>Location</th>
+          <th>Condition</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; let i = index">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>₱{{ item.price }}</td>
+          <td>{{ item.location }}</td>
+          <td>{{ item.details }}</td>
+          <td><a [routerLink]="['/details', item.id]" class="button">Details</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
